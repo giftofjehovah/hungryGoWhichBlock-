@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  /*border: 1px solid black;*/
+}
+
+.row {
+  /*width: 100%;*/
+  display: flex;
+  flex-wrap: wrap;
+  /*margin-bottom: 1em;*/
+  margin-right: -1em;
+  margin-left: -1em;
+}
+
+.container {
+  width: 100%;
+  padding: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.column {
+  flex: 1;
+  min-height: 1em;
+  padding: 0 0.5em;
+  padding-bottom: 1em;
+}
+
+.is-full {
+  flex: 0 0 100%;
+}
+
+.dishes {
+  flex: 0 0 33.33%;
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 0 0 100%;
+  }
+}
+
+.single {
+  border: 1px solid hotpink;
+  height: 100px;
+  background-color: grey;
+}
